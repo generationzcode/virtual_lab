@@ -7,9 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.1/dist/tf.min.js"></script>
         <script src="linear_regression.js"></script><br>
     <p style="font-family: sans-serif">hi!This virtual lab lets you add in points and writes the equation of the line of best fit. You can write down the points in the text boxes below ( the problem is,once you write in a textbox,don't rewrite it...):</p><br>
-    (<input type="number" id="X1" onblur="xs.push(parseInt(this.value))">(x point goes here...),<input type="number" id="Y1" onblur="ys.push(parseInt(this.value))">(y point goes here...))<br>
-     (<input type="number" id="X1" onblur="xs.push(parseInt(this.value))">(x point goes here...),<input type="number" id="Y1" onblur="ys.push(parseInt(this.value))">(y point goes here...))<br>
-     (<input type="number" id="X1" onblur="xs.push(parseInt(this.value))">(x point goes here...),<input type="number" id="Y1" onblur="ys.push(parseInt(this.value))">(y point goes here...))<br>
+    (<input type="number" id="X1" onblur="if(this.value!=NaN){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(this.value!=NaN){ys.push(parseInt(this.value))}">(y point goes here...))<br>
+     (<input type="number" id="X1" onblur="if(this.value!=NaN){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(this.value!=NaN){ys.push(parseInt(this.value))}">(y point goes here...))<br>
+     (<input type="number" id="X1" onblur="if(this.value!=NaN){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(this.value!=NaN){ys.push(parseInt(this.value))}">(y point goes here...))<br>
      <button style="height:30px;background-color: darkmagenta;width:100px;color:white" id="butto" onclick="run()">submit points!</button>
 <br><br><br><p style="font-family: sans-serif">Built with tensorflow.js!!
         <br>It might show slightly wrong results...</p><br>

@@ -1,6 +1,6 @@
 var m,c;
 var xs,ys,tfxs,tfys;
-var Y1,Y2,Y3,X1,X2,X3;
+var Y1,Y2,Y3,X1,X2,X3 = false;
 
 $(document).ready(function(){
 

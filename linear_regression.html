@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    </head>
-    <body style="background-color: ghostwhite">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>virtual lab!</title>    
+</head>
+    
+<body style="background-color: ghostwhite">
+    <div style="background-color: black;color:white;text-align: center;font-family:sans-serif"> <br><h1>Linear Regression</h1><br></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.1/dist/tf.min.js"></script>
-        <script src="linear_regression.js"></script><br>
-    <p style="font-family: sans-serif">hi!This virtual lab lets you add in points and writes the equation of the line of best fit. You can write down the points in the text boxes below (and please don't change what you've wriiten in any of the textboxes after youve left it...):</p><br>
-    (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value))){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br>
-     (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value)) ){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br>
-     (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value))){xs.push(parseInt(this.value))}">(x point goes here...),<input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br>
-     <button style="height:30px;background-color: darkmagenta;width:100px;color:white" id="butto" onclick="run()">submit points!</button>
-<br><br><br><p style="font-family: sans-serif">Built with tensorflow.js!!
-        <br>It might show slightly wrong results...</p><br>
-        </body>
+    <script src="linear_regression.js"></script><br>
+    <div style="height:500px;width:750px;background-color: darkgray;margin:auto;"><br><br><br><br><center>
+    <p style="font-family: sans-serif;text-align: justify;width:550px">hi!This virtual lab lets you add in points and writes the equation of the line of best fit.It runs on a machine learning algorithm called linear regression. You can use this algorithm for many purposes, in cases where you can see a linear connection between two variables (eg. "load you put on a spring balance" and " the length of it's extension.") .<br><br>You can write down the points in the text boxes below (and please don't change what you've wriiten in any of the textboxes after youve left it...):</p><br>
+    <br><br>
+    (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value))){xs.push(parseInt(this.value))}">(x point goes here...),
+    
+    <input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br>
+    
+    (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value)) ){xs.push(parseInt(this.value))}">(x point goes here...),
+    
+    <input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br>
+    
+    (<input type="number" id="X1" onblur="if(!isNaN(parseInt(this.value))){xs.push(parseInt(this.value))}">(x point goes here...),
+    
+    <input type="number" id="Y1" onblur="if(!isNaN(parseInt(this.value))){ys.push(parseInt(this.value))}">(y point goes here...))<br><br><br><br>
+    
+    <button style="height:30px;background-color: darkmagenta;width:100px;color:white" id="butto" onclick="run()">submit points!</button>
+<br><br><br>
+        </center>
+    </div><br><br>
+    <footer><center><p style="font-family: sans-serif">Built with tensorflow.js!!
+        <br>It might show slightly wrong results...</p><br></center></footer>
+</body>
 </html>
